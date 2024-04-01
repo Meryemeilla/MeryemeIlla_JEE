@@ -1,5 +1,6 @@
 Illa Meryeme                                                                                                        
-Systèmes distribuées                                                                                                    MIAAD                                                                                                             
+Systèmes distribuées                                                                                                   
+   MIAAD                                                                                                             
 Promotion: 2023-2025
 
 # Partie 1:
