@@ -1,39 +1,37 @@
-	Illa Meryeme
+Illa Meryeme
+Systèmes distribuées
+MIAAD
+Promotion: 2023-2025
 
-Partie 1:
-1-	Créer l'interface IDao avec une méthode getData() :
+# Partie 1:
+
+## 1-	Créer l'interface IDao avec une méthode getData() :
 ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/6a6cc6a4-03e7-4a93-b6d2-605a28807f48)
 
- 
-2-	Créer une implémentation de cette interface :
-
+## 2-	Créer une implémentation de cette interface :
 √ Implémentation DaoImpl :
  ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/f90483c2-c2e9-42f9-af60-83e4c6edb7fe)
-
 √ Implémentation DaoImpl2 :
  ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/45a6e073-bf93-409f-999c-b0eccd38c0d1)
- 
  √ Implémentation DaoImplVWS :
 ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/552236de-1bf2-4629-a3c4-d3f7aeed2531)
  
-3-	Créer l'interface IMetier avec une méthode calcul :
+## 3-	Créer l'interface IMetier avec une méthode calcul :
  ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/57aa8976-d211-45d0-82ae-af3340b62ac8)
 
-4-	Créer une implémentation de cette interface en utilisant le couplage faible :
+## 4-	Créer une implémentation de cette interface en utilisant le couplage faible :
 ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/d390c35b-6046-44b3-a92f-dbb582b79b52)
  
-5-	Faire l'injection des dépendances :
+## 5-	Faire l'injection des dépendances :
 ♦ Par instanciation statique :
 ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/57bdb48d-3d60-4c45-8c8f-be4411416e84)
  ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/e4c11351-7381-4e7c-953a-693f37ecdd4c)
-
 ♦ Par instanciation dynamique :
  ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/702264ed-b00d-4ea4-8078-3cc26fad6677)
-
 Le fichier de configuration « config.txt » :
  ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/ea2d4720-7c4e-43dc-bbd2-57ec21cae378)
 
-Partie 2 :
+# Partie 2 :
 Au lieu de créer un projet Java, nous créons un projet maven qui contient le fichier pom.xml
 L’injection des dépendances en utilisant spring .
 Ajouter les dépendances du framework Spring  
@@ -41,7 +39,7 @@ Ajouter les dépendances du framework Spring
 ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/40da02cc-8d1b-4e5c-ac70-42fb861e1adc)
 ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/08f2e865-f4d3-4a7a-9654-48181ce49e0a)
 
-En utilisant le Framework Spring :
+## En utilisant le Framework Spring :
   -  Version XML :
 Créer le fichier de configuration « applicationContext.xml » :
 Le premier bean sert à créer un objet dao de la classe DaoImpl.
@@ -56,10 +54,8 @@ De la même manière si on veut afficher la version capteurs on modifier le fich
  
 De même pour la version web service :
  ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/eca7cc1e-cbbe-4d9c-be8e-1b924743c8b5)
-![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/57950682-77f4-416e-b8bf-75ff2b135856)
-
-           
-                 -Version Annotation :
+![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/57950682-77f4-416e-b8bf-75ff2b135856)          
+ -  Version Annotation :
 Pour utiliser la version annotation en ajoute l’annotation @Compenent("dao")  pour instancier les classes et utiliser la notation @Autowired pour injecter les dépendances 
  ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/109c31e0-1d8f-4f6a-9229-f64484bd6d2a)
 ![image](https://github.com/Meryemeilla/MeryemeIlla_JEE/assets/165611188/3e1c96ee-4c12-4205-8667-b91e91c4a64e)
